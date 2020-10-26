@@ -204,7 +204,7 @@ namespace IcapSocket
                         {
                             return true;
                         }
-                        throw new ICAPException(string.Format($"The file '{}' is potentially dangerous!", fullFileName));
+                        throw new ICAPException($"The file '{fullFileName}' is potentially dangerous!");
                     }
                 }
                 throw new ICAPException("Unrecognized or no status code in response header.");
